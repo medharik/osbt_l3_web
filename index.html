@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REVISION WEB , cours html / css</title>
+    <style>
+        label{
+            cursor: pointer;
+        }
+        th{
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="images/fede.png" alt="fede des écoles ...">
+        </div>
+        <nav>
+            <!-- ul>li*2>a -->
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="contact.html">Nous contacter</a></li>
+            </ul>
+            
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Nous Contacter :  </h2>
+            <form action="http://google.com">
+               <table    align="center" width="600"  >
+                   <tr>
+                       <th><label for="np">Nom & Prenom :</label> </th>
+                       <td><input type="email" id="np"   required placeholder="Votre nom ....." name="q" ></td>
+                   </tr>
+                   <tr>
+                       <th><label for="p">Mot de passe :</label> </th>
+                       <td><input type="password" id="p" name="passe" ></td>
+                   </tr>
+                   <tr>
+                       <th><label for="rappel">Se rappeler du mot de passe</label></th>
+                       <td><input type="checkbox" id="rappel" name="rappel"></td>
+                   </tr>
+                   <!-- tr>((th>label)+(td>input)) -->
+                   <tr>
+                       <th><label for="">Genre</label></th>
+                      <td>
+                        <label for="homme">Homme</label> 
+                        <input type="radio" name="genre" id="homme" value="homme">
+                        <label for="femme">Femme</label> <input checked value="femme" type="radio" name="genre" id="fenme">
+                      </td>
+
+                   </tr>
+                   <tr>
+                       <th><label for="adresse">Adresse</label></th>
+                       <td>
+                           <textarea name="adresse" id="adresse" cols="30" rows="3"></textarea>
+                       </td>
+                   </tr>
+                   <tr>
+                       <th><label for="">Ville</label></th>
+                       <td>
+                           <select name="ville" id="ville" multiple size="2" >
+                               
+                               <option value="casa">CASABLANCA</option>
+                               <option value="dakar">DAKAR</option>
+                               <option value="abidjon">ABIDJON</option>
+                               <option value="" selected>...</option>
+                           </select>
+                       </td>
+                   </tr>
+                   <tr>
+                       <th><label for="">Pays</label>
+
+                       </th>
+                       <td>
+                        <input type="text"  name="pays" id="pays" list="list_pays"  >
+                    </td>
+                    
+                   </tr>
+                   <tr>
+                       <td>Couleur</td>
+                       <td><input type="color" name="" id="">
+                    Salaire <input type="number" name="sa" id="sa"  min="3000" max="999999" required step="0.01"  >
+                    </td>
+                   </tr>
+                   <tr>
+                       <td></td>
+                       <td><button>Valider</button></td>
+                    </tr>
+                </table>
+               
+                
+            </form>
+        </section>
+        <section>
+            
+            
+        </section>
+    </main>
+    <footer></footer>
+    <datalist id="list_pays">
+        <option value="maroc">Maroc</option>
+        <option value="GUINEE">GUINEE</option>
+        <option value="SENAGAL">SENAGAL</option>
+    </datalist>  
+    
+</body>
+</html>
