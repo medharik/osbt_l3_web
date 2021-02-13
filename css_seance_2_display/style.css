@@ -1,0 +1,42 @@
+#intro{
+    width: 100%;
+    height: 100vh;
+    background-color:deeppink;
+}
+#catalogue{
+    width: 1200px;
+    min-height: 600px;
+margin: auto;
+}
+.b{
+    border: 0px solid black;
+    box-sizing: border-box;
+}
+#intro > video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.produit{
+    width: 25%;
+    height: 400px;
+    float: left;
+    padding: 10px;
+}
+.produit .image{
+    width: 100%;
+    height: 300px;
+
+}
+.produit .info{
+    width: 100%;
+    height: 100px;
+}
+.separateur{
+    clear: both;
+}
+.image img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
