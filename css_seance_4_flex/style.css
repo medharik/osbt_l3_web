@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.parent{
+    background: burlywood;
+    width: 1000px;
+    height: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.enfant{
+    border: 1px solid maroon;
+    flex-basis: 50%;
+}
+#cd{
+    display: flex;
+}
+.coord  i{
+    font-size: 4em;
+    color: rebeccapurple;
+    flex-basis: 50%;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 10px;
+    
+}
+.coord{
+    border: 2px solid purple;
+    flex-basis: 50%;
+    display: flex;
+    flex-wrap: wrap;
+
+}
